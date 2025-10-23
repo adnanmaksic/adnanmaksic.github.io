@@ -1,0 +1,15 @@
+body {
+      font-family: 'Consolas', monospace;
+    }
+
+.cursor::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
